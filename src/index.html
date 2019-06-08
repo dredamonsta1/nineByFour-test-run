@@ -9,6 +9,18 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <input type="text" ng-model="searchBox">
+
   <app-root></app-root>
+
+  <div ng-controler="rapper">
+      <ul>
+        <h2>Artist you are searching for:</h2>
+        <li ng-repeat="rapper in rappers | filter:searchBox">
+          {{ rapper.Name + ' : ' + rapper.Age }}
+        </li>
+      </ul>
+    </div>
+  
 </body>
 </html>
