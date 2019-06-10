@@ -10,5 +10,6 @@ export class AppComponent {
   list = 'Top Hip hop artist'
 }
 export class hipHopList {
+  rapper = ''
 
 }
